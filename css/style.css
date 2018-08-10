@@ -4,33 +4,33 @@
   margin: 0 auto;
   padding: 0 30px 40px 30px;
 }
-header {
+.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
   font-family: 'Source Sans Pro', sans-serif;
 }
-header .menu ul {
+.main-header .menu ul {
   padding: 0;
 }
-header .menu ul a {
-  text-decoration: none;
-  color: #000000;
-  padding: 0 15px 5px 15px;
-}
-header .menu ul a:last-child {
-  padding-right: 0;
-}
-header .menu ul a:hover {
-  color: #d94137;
-  transition: .2s;
-}
-header .menu ul a li {
+.main-header .menu ul li {
   display: inline;
   list-style: none;
   font-size: 16px;
   font-weight: 600;
+}
+.main-header .menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0 15px 5px 15px;
+}
+.main-header .menu ul li a:last-child {
+  padding-right: 0;
+}
+.main-header .menu ul li a:hover {
+  color: #d94137;
+  transition: .2s;
 }
 .banner {
   background: #f0f0f0;
@@ -54,6 +54,7 @@ header .menu ul a li {
   width: 375px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 .banner .banner-info .banner-text .title {
   font-family: 'Source Sans Pro', sans-serif;
@@ -69,8 +70,7 @@ header .menu ul a li {
   margin-bottom: 13px;
 }
 .banner .banner-info .banner-text .btn {
-  width: 115px;
-  height: 29px;
+  padding: 0 25px;
   border-radius: 3px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 13px;
@@ -168,31 +168,31 @@ header .menu ul a li {
   }
 }
 @media screen and (max-width: 550px) {
-  header {
+  .main-header {
     flex-direction: column;
   }
-  header .menu ul a {
+  .main-header .menu ul li a {
     padding: 0 12px 5px 12px;
   }
-  header .menu ul a:last-child {
+  .main-header .menu ul li a:last-child {
     padding-right: 15px;
   }
 }
 @media screen and (max-width: 455px) {
-  header {
+  .main-header {
     margin: 20px 0 0 20px;
   }
-  header .menu ul a {
-    padding: 0px;
-  }
-  header .menu ul a:last-child {
-    padding-right: 0;
-  }
-  header .menu ul a li {
+  .main-header .menu ul li {
     padding: 5px;
     text-align: center;
     display: block;
     margin: 3px;
+  }
+  .main-header .menu ul li a {
+    padding: 0px;
+  }
+  .main-header .menu ul li a:last-child {
+    padding-right: 0;
   }
   .banner {
     background: #f9f9f9;
